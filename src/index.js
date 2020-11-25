@@ -3,6 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import firebase from 'firebase';
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyCAu9-6mGwfTrbxw6XJJOBCQ-7W2q03-XI",
+  authDomain: "yomiru-2b533.firebaseapp.com",
+  databaseURL: "https://yomiru-2b533.firebaseio.com",
+  projectId: "yomiru-2b533",
+  storageBucket: "yomiru-2b533.appspot.com",
+  messagingSenderId: "703209185546",
+  appId: "1:703209185546:web:91b53a3325f1a2a131daf3"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
