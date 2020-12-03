@@ -108,11 +108,11 @@ function Login({ history }) {
         >
           Login
         </Button>
-        <Link to='/signup'>
-          <Button variant="contained" color="primary" type="submit" fullWidth>
+        {/* <Link to='/signup'> */}
+          <Button to="/signup" component={Link} variant="contained" color="primary" type="submit" className={classes.submit} fullWidth>
             Create Account
           </Button>
-        </Link>
+        {/* </Link> */}
       </div>
     </Container>
   );
