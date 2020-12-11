@@ -43,6 +43,7 @@ function SignUp({ history }) {
           userName,
           email,
           id: uuid,
+          myAnimeLists: [],
         };
 
         firebase.firestore().collection("users").add(storeUser);
